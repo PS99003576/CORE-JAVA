@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Arithmetic{
+public class Arithmetic{
 
     int Perform_Arithmetic_Operation(int FN, int SN, int O){
         

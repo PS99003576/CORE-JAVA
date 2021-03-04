@@ -1,23 +1,28 @@
 package Comparator;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Scanner;
+
 public class Main {
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) throws NumberFormatException, IOException{
+		BufferedStream br = new BufferedStream(new InputStreamReader(System.in));
+
+		
 		ArrayList<Player> al=new ArrayList<Player>();
 		
 	System.out.println("Please provide the number of players to be registered");
-	int n=sc.nextInt();
+	int n=Integer.parseInt(br.readLine());
 	for(int i=0;i<n;i++)
 	{
 		System.out.println("Enter the name of the player ");
-		String name=sc.next();
+		String name=br.readLine();
 		System.out.println("Enter the skill of the player ");
 		System.out.println("1.BATTING");
 		System.out.println("2.BOWLING");
 		System.out.println("3.ALLROUNDER");
-		String skill=sc.next();
+		String skill=br.readLine();
 		if(skill.equals("1"))
 		{
 			skill="Batting";
